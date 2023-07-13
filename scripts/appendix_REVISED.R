@@ -35,5 +35,29 @@ Plot_UHI <- ggplot(DATA_PARDOSES_30min_test_juveniles, aes_string(x = DATA_PARDO
   labs(x="UHI intensity (°C)", y= "Tpref range (°C) ", color = "Legend") +
   scale_color_manual(values = colors) + ggtitle('Juveniles')
 
+# comparison of UHI metrics  - models
 
+model_Tpref_range_UHI_09_02 <- glmer((SD) ~ Dev_stage.x +
+                             Sex +
+                             UHI_09_04_pixel.x + 
+                             (Dev_stage.x*Sex)+
+                             (Dev_stage.x*UHI_09_04_pixel.x)+
+                             (1|Session.x), 
+                           DATA_PARDOSES_30min_test,
+                           family=gaussian(link=identity))
+
+summary(model_Tpref_range_UHI_09_02) 
+r2(model_Tpref_range_UHI_09_02)
+
+model_Tpref_range_UHI_12_02 <- glmer((SD) ~ Dev_stage.x +
+                                       Sex +
+                                       UHI_12_02_pixel.x + 
+                                       (Dev_stage.x*Sex)+
+                                       (Dev_stage.x*UHI_12_02_pixel.x)+
+                                       (1|Session.x), 
+                                     DATA_PARDOSES_30min_test,
+                                     family=gaussian(link=identity))
+
+summary(model_Tpref_range_UHI_12_02) 
+r2(model_Tpref_range_UHI_12_02)
 

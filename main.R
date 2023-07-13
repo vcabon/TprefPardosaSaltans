@@ -31,8 +31,8 @@ source("scripts/test_dynamic_tpref_90min_with557ind.R") # formatting data and ru
 source("scripts/figures_dynamic_Tpref.R") # Create and export figures 
 
 # Effect of factors on Tpref and SD Tpref from the 30th min of the experiment
-source("scripts/test_factors_30min_with557ind.R")
-source("scripts/figures_factors_Tpref.R")
+source("scripts/test_factors_30min_with557ind_REVISED.R")
+source("scripts/figures_factors_Tpref_REVISED.R")
 
 # Appendix
-source("scripts/appendix.R")
+source("scripts/appendix_REVISED.R")

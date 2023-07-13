@@ -19,7 +19,7 @@ compare_models_HUI_Tpref <- function(data, resp, dev) {
     
     print("UHI : March to April 2022")
     print(cbind(summary_model_factors_Tpref$coefficients[,-3], results_model_factors_Tpref[3]))
-    print(r2_model_factors_Tpref $R2_conditional)
+    print(r2_model_factors_Tpref$R2_marginal)
     
     
     # run model with UHI_06_06_pixel
@@ -38,7 +38,7 @@ compare_models_HUI_Tpref <- function(data, resp, dev) {
     
     print("UHI : September 2021 to April 2022")
     print(cbind(summary_model_factors_Tpref$coefficients[,-3], results_model_factors_Tpref[3]))
-    print(r2_model_factors_Tpref $R2_conditional)
+    print(r2_model_factors_Tpref$R2_marginal)
     
     
     # run model with UHI_12_3_pixel.x
@@ -57,7 +57,7 @@ compare_models_HUI_Tpref <- function(data, resp, dev) {
     
     print("UHI : December 2021 to February 2022")
     print(cbind(summary_model_factors_Tpref$coefficients[,-3], results_model_factors_Tpref[3]))
-    print(r2_model_factors_Tpref $R2_conditional)
+    print(r2_model_factors_Tpref$R2_marginal)
   }
   
   else {
@@ -78,7 +78,7 @@ compare_models_HUI_Tpref <- function(data, resp, dev) {
     
     print("UHI : March to April 2022")
     print(cbind(summary_model_factors_Tpref$coefficients[,-3], results_model_factors_Tpref[3]))
-    print(r2_model_factors_Tpref $R2_conditional)
+    print(r2_model_factors_Tpref$R2_marginal)
     
     
     # run model with UHI_06_06_pixel
@@ -98,7 +98,7 @@ compare_models_HUI_Tpref <- function(data, resp, dev) {
     
     print("UHI : September 2021 to April 2022")
     print(cbind(summary_model_factors_Tpref$coefficients[,-3], results_model_factors_Tpref[3]))
-    print(r2_model_factors_Tpref $R2_conditional)
+    print(r2_model_factors_Tpref$R2_marginal)
     
     
     # run model with UHI_12_3_pixel.x
@@ -118,7 +118,7 @@ compare_models_HUI_Tpref <- function(data, resp, dev) {
     
     print("UHI : December 2021 to February 2022")
     print(cbind(summary_model_factors_Tpref$coefficients[,-3], results_model_factors_Tpref[3]))
-    print(r2_model_factors_Tpref $R2_conditional)
+    print(r2_model_factors_Tpref$R2_marginal)
   }
   
 }
